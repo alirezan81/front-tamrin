@@ -1,0 +1,146 @@
+
+input{
+    display: block;
+    --height : 40px;
+    height: var(--height);
+    border-radius: calc(var(--height)/2);
+    padding: 0 24px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    font-family: Roboto,sans-serif;
+    line-height: 20px;
+    margin: 10px;
+}
+
+
+.filled{
+    color: #FFFFFF;
+    background-color: #6750A4;
+}
+
+.filled.disabled:disabled{
+    background-color: #1C1B1F;
+    color: #E6E1E5;
+    opacity: 20%;
+    border: none;
+}
+
+.filled.hovered:hover{
+    outline: 0;
+    color: #6750a4;
+    background-color: #FFFFFF;
+    cursor: pointer;
+}
+
+
+.filled.focused:focus{
+    color: #6750a4;
+    background-color: #FFFFFF;
+}
+
+.filled.pressed:active{
+    color: #6750a4;
+    background-color: #FFFFFF;
+}
+
+
+.outlined{
+    color: #6750A4;
+    background-color: #FFFBFE;
+    outline-style: solid;
+    outline-color: #79747E;
+    outline-width: 1px;
+}
+
+
+.outlined.disabled:disabled{
+    outline-color: #1C1B1F;
+    color: #1C1B1F;
+    opacity: 20%;
+    border: none;
+}
+
+.outlined.hovered:hover{
+    color: #FFFBFE;
+    outline-color: #79747E;
+    background-color: #6750A4;
+    cursor: pointer;
+}
+
+.outlined.focused:focus{
+    outline-color: #6750A4;
+    background-color: #6750A4;
+    color: #FFFBFE;
+}
+
+.outlined.pressed:active{
+    color: #FFFBFE;
+    background-color: #6750A4;
+    outline-color: #79747E;
+}
+
+
+
+.tonal{
+    color: #1E192B;
+    background-color:  #E8DEF8;
+}
+
+.tonal.disabled:disabled{
+    background-color: #1C1B1F;
+    color: #E6E1E5;
+    opacity: 20%;
+    border: none;
+}
+
+.tonal.hovered:hover{
+    color: #E8DEF8;
+    background-color: #1E192B;
+    cursor: pointer;
+}
+
+.tonal.focused:focus{
+    color: #E8DEF8;
+    background-color: #1E192B;
+}
+
+.tonal.pressed:active{
+    color: #E8DEF8;
+    background-color: #1E192B;
+}
+
+
+
+.text{
+    color: #6750A4;
+    padding: 0 12px;
+    border: none;
+    background: none;
+}
+
+.text.disabled:disabled{
+    color: #1C1B1F;
+    opacity: 38%;
+}
+
+.text.hovered:hover{
+    color: #FFFBFE;
+    background-color: #6750A4;
+    cursor: pointer;
+}
+
+.text.focused:focus{
+    background-color: #6750A4;
+    color: #FFFBFE;
+}
+
+.text.pressed:active{
+    background-color: #6750A4;
+    color: #FFFBFE;
+}
+
+
+
+
