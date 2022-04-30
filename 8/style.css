@@ -1,0 +1,143 @@
+:root{
+    --surface-variant:#E7E0EC;
+    --on-surface-variant: #49454E;
+    --surface: #FFFBFE;
+    --on-surface : #1C1B1F;
+    --surface-tint :#6750A4;
+    --primary90:#EADDFF; 
+    --outline: #79747E;
+    --shadow:#000000;
+}
+
+
+.card{
+    display: inline-block;
+    font-family: 'Roboto';
+    border-radius: 5px;
+    width: 250px;
+    font-size: 14px;
+    border: transparent;
+    overflow: hidden;
+    margin: 20px;
+}
+
+a{
+    padding: 16px;
+    margin-top: 5px;
+    border-radius: 25px;
+    text-decoration: none;
+    display: inline-block;
+    margin-left: 116px;
+
+}
+
+#btn_filled{
+    border: 1px solid black;
+    background-color: white;
+    color: #6750A4;
+    margin-left: 110px;
+}
+
+
+.card-body{
+    padding: 16px;
+}
+
+.card-img-top{
+    width: 250px;
+    height: 200px;
+}
+
+.card.filled{
+    color: var(--on-surface-variant);
+    background-color: var(--surface-variant);
+}
+
+.card-title{
+    max-block-size: 10px;
+}
+
+.card-sub-head{
+    font-size: 16px;
+    margin-top: 16px;
+}
+
+.card.filled:hover{
+    background-color: var(--on-surface);
+    cursor: pointer;
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.3),
+                0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+    color: white;
+}
+
+.card.filled:focus{
+    background-color: var(--on-surface);
+    background: linear-gradient(
+        var(--opacity-focus), var(--opacity-focus)
+    );
+}
+
+.card.filled:active{
+    opacity: 50%;
+}
+
+.card.outlined{
+    background-color: var(--surface);
+    color: var(--on-surface);
+    outline-style: solid;
+    outline-width:1px;
+    outline-color: var(--outline);
+}
+
+#btn_outlined , #btn_evelated{
+    background-color: #6750A4;
+    color: white;
+}
+
+.card.outlined:hover{
+    background-color: var(--surface-variant);
+    color: var(--on-surface);
+    box-shadow: 0px 1px 2px 0px var(--outline),
+    0px 1px 3px 1px var(--outline);   
+}
+
+.card.outlined:focus{
+    background-color: var(--surface-variant);
+    color: var(--on-surface);
+    box-shadow: 0px 1px 2px 0px var(--on-surface),
+    0px 1px 3px 1px var(--on-surface); 
+}
+
+.card.outlined:active{
+    opacity: 50%; 
+}
+
+
+.card.evelated{
+    color: var(--on-surface);
+    background-color: var(--surface);
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.3),
+    0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+    
+}
+
+.card.evelated:hover{
+    color: var(--surface);
+    background-color: var(--on-surface);
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.3),
+    0px 2px 6px 2px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+}
+
+.card.evelated:focus{
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.3),
+    0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+}
+
+
+.card.evelated:active{
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.3),
+    0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+    opacity: 50%; 
+
+}
